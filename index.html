@@ -122,8 +122,42 @@
 <div class="container">
 
   <!-- Real APK download link inserted -->
-  <a href="https://github.com/MullaDev/Tns-243-tun/releases/download/V1/243-TUN-V1.0.apk" 
-     class="download-btn" download>⬇️ Download 243 TUN APK</a>
+  <a id="downloadBtn" class="download-btn" href="#" onclick="startCountdown(event)">
+  ⬇️ Download 243 TUN APK
+</a>
+
+<script>
+  let countdownTime = 5; // seconds
+
+  function startCountdown(e) {
+    e.preventDefault(); 
+
+    const button = document.getElementById("downloadBtn");
+    button.style.pointerEvents = "none"; // disable clicking
+    button.style.opacity = "0.6"; 
+    button.textContent = `Preparing download... ${countdownTime}s`;
+
+    const timer = setInterval(() => {
+      countdownTime--;
+      button.textContent = `Preparing download... ${countdownTime}s`;
+
+      if (countdownTime === 0) {
+        clearInterval(timer);
+        button.style.pointerEvents = "auto"; 
+        button.style.opacity = "1"; 
+        button.textContent = "⬇️ Download Starting...";
+
+        // Auto start download
+        window.location.href = "https://github.com/MullaDev/Tns-243-tun/releases/download/V1/243-TUN-V1.0.apk";
+
+        // Optional: After download, button turns normal
+        setTimeout(() => {
+          button.textContent = "⬇️ Download 243 TUN APK";
+        }, 3000);
+      }
+    }, 1000);
+  }
+</script>
 
   <div class="app-info">
     <p><span class="label">Vote:</span> ★★★☆☆ (19 votes)</p>
