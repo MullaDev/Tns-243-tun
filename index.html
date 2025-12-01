@@ -8,73 +8,183 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(180deg, #0a0f24, #0b0d18);
+      background: #0a0f24;
       color: #fff;
-      text-align: center;
     }
+
     header {
       padding: 20px;
       background-color: #0e1533;
+      text-align: center;
+      border-bottom: 2px solid #1e2a50;
     }
+
     header h1 {
+      margin: 0;
+      font-size: 26px;
+      color: #3a8ef6;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .app-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+
+    .app-header img {
+      width: 70px;
+      height: 70px;
+      border-radius: 10px;
+    }
+
+    .app-title h2 {
       margin: 0;
       font-size: 24px;
       color: #3a8ef6;
     }
-    .content {
-      margin-top: 80px;
-      padding: 20px;
-    }
-    .logo {
-      font-size: 90px;
-      color: #3a8ef6;
-    }
-    h2 {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-    p {
-      max-width: 400px;
-      margin: 10px auto 30px;
-      line-height: 1.5;
-    }
+
     .download-btn {
+      display: inline-block;
       background-color: #3a8ef6;
       border: none;
-      border-radius: 30px;
-      padding: 15px 40px;
+      border-radius: 5px;
+      padding: 12px 20px;
       color: white;
-      font-size: 18px;
-      cursor: pointer;
+      font-size: 16px;
       text-decoration: none;
-      transition: background 0.3s;
+      margin-top: 10px;
+      cursor: pointer;
     }
+
     .download-btn:hover {
       background-color: #1e66d2;
     }
-    footer {
-      margin-top: 80px;
+
+    .info-table {
+      background: #0e1533;
       padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    .info-table p {
+      margin: 6px 0;
+    }
+
+    h3 {
+      margin-top: 30px;
+      color: #3a8ef6;
+    }
+
+    .pros, .cons {
+      background-color: #10162e;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    ul {
+      margin-top: 10px;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 15px;
+      text-align: center;
+      background-color: #0e1533;
       font-size: 12px;
       color: #ccc;
     }
+
+    .screenshots img {
+      width: 45%;
+      border-radius: 8px;
+      margin: 10px;
+      border: 1px solid #1e2a50;
+    }
+
+    .section-description {
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+
   </style>
 </head>
 <body>
 
   <header>
-    <h1>DEMON VPN</h1>
+    <h1>Demon VPN</h1>
   </header>
 
-  <div class="content">
-    <div class="logo">💀</div>
-    <h2>Experience the Power of Demon VPN</h2>
-    <p>Fast, secure, and unlimited VPN access for Android. Protect your data and bypass restrictions with our free VPN app.</p>
+  <div class="container">
+    <!-- Header with Icon and Title -->
+    <div class="app-header">
+      <img src="https://via.placeholder.com/70" alt="Demon VPN Logo">
+      <div class="app-title">
+        <h2>Demon VPN – Secure Android VPN</h2>
+        <a href="#" class="download-btn">⬇️ Free Download</a>
+      </div>
+    </div>
 
-    <!-- Change this link below to your APK or MediaFire URL -->
-    <a href="https://www.mediafire.com/file/your_apk_link_here/DemonVPN.apk/file" class="download-btn">
-      ⬇️ Download Free VPN
-    </a>
+    <!-- Information Table -->
+    <div class="info-table">
+      <p><strong>Rating:</strong> ★★★★☆ (78 votes)</p>
+      <p><strong>License:</strong> Free</p>
+      <p><strong>Version:</strong> 4.2.1</p>
+      <p><strong>Developer:</strong> DemonVPN Team</p>
+      <p><strong>Works on:</strong> Android</p>
+      <p><strong>Also Known As:</strong> Demon VPN – Android Protection</p>
+    </div>
+
+    <!-- Pros Section -->
+    <h3>Pros</h3>
+    <div class="pros">
+      <ul>
+        <li>✔️ Bypass Firewalls & Access Geo-Restricted Content</li>
+        <li>✔️ Secure & Encrypted VPN Connections</li>
+        <li>✔️ Browse the Web 100% Anonymously</li>
+        <li>✔️ Fast Connections with Unlimited Servers</li>
+      </ul>
+    </div>
+
+    <!-- Cons Section -->
+    <h3>Cons</h3>
+    <div class="cons">
+      <ul>
+        <li>⚠️ Free version may show limited servers</li>
+        <li>⚠️ High-speed servers require premium version</li>
+      </ul>
+    </div>
+
+    <!-- Description -->
+    <h3>About Demon VPN</h3>
+    <p class="section-description">
+      Demon VPN is a powerful Android VPN application that allows you to browse safely, 
+      securely, and anonymously. Whether you want to bypass internet restrictions, access blocked websites, 
+      or protect your privacy, Demon VPN ensures a stable and encrypted connection from your Android device.
+    </p>
+    <p class="section-description">
+      With Demon VPN, you can hide your identity, protect your data, and experience secure browsing 
+      at high speed. It supports multiple VPN protocols, including SSH, SSL, WebSocket, SlowDNS, and more.
+    </p>
+
+    <!-- Screenshots -->
+    <h3>Screenshots</h3>
+    <div class="screenshots">
+      <img src="https://via.placeholder.com/400x800" alt="Screenshot 1">
+      <img src="https://via.placeholder.com/400x800" alt="Screenshot 2">
+    </div>
+
   </div>
 
   <footer>
@@ -82,4 +192,4 @@
   </footer>
 
 </body>
-  </html>
+</html>
