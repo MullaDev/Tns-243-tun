@@ -3,193 +3,172 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Demon VPN</title>
+  <title>243 TUN</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #0a0f24;
+      background: linear-gradient(180deg, #0a0f24, #0b0d18);
       color: #fff;
+      line-height: 1.6;
     }
-
     header {
       padding: 20px;
       background-color: #0e1533;
       text-align: center;
-      border-bottom: 2px solid #1e2a50;
     }
-
+    header img {
+      width: 70px;
+      height: 70px;
+      border-radius: 15px;
+    }
     header h1 {
-      margin: 0;
-      font-size: 26px;
+      margin: 10px 0 0;
+      font-size: 28px;
       color: #3a8ef6;
-      text-transform: uppercase;
-      letter-spacing: 2px;
     }
-
     .container {
-      max-width: 850px;
+      max-width: 800px;
       margin: auto;
       padding: 20px;
     }
-
-    .app-header {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      margin-bottom: 25px;
-    }
-
-    .app-header img {
-      width: 70px;
-      height: 70px;
-      border-radius: 10px;
-    }
-
-    .app-title h2 {
-      margin: 0;
-      font-size: 24px;
-      color: #3a8ef6;
-    }
-
     .download-btn {
-      display: inline-block;
+      display: block;
+      width: 200px;
+      margin: 20px auto;
       background-color: #3a8ef6;
-      border: none;
-      border-radius: 5px;
-      padding: 12px 20px;
-      color: white;
-      font-size: 16px;
+      padding: 15px 20px;
+      border-radius: 30px;
+      text-align: center;
       text-decoration: none;
-      margin-top: 10px;
-      cursor: pointer;
+      color: #fff;
+      font-size: 18px;
     }
-
     .download-btn:hover {
       background-color: #1e66d2;
     }
-
-    .info-table {
-      background: #0e1533;
-      padding: 15px;
-      border-radius: 8px;
-      margin-top: 20px;
-      line-height: 1.6;
-    }
-
-    .info-table p {
-      margin: 6px 0;
-    }
-
-    h3 {
-      margin-top: 30px;
-      color: #3a8ef6;
-    }
-
-    .pros, .cons {
+    .app-info {
       background-color: #10162e;
       padding: 15px;
-      border-radius: 8px;
-      margin-top: 10px;
+      border-radius: 10px;
+      margin: 20px 0;
+      font-size: 14px;
     }
-
-    ul {
-      margin-top: 10px;
+    .label {
+      color: #3a8ef6;
+      font-weight: bold;
     }
-
-    footer {
-      margin-top: 40px;
+    h2 {
+      color: #3a8ef6;
+      margin-top: 30px;
+    }
+    .pros-cons {
+      margin-top: 10px;
+      background-color: #10162e;
       padding: 15px;
+      border-radius: 10px;
+    }
+    .pros-cons ul {
+      list-style: none;
+      padding: 0;
+    }
+    .pros-cons li {
+      padding-left: 5px;
+      margin-bottom: 8px;
+    }
+    .pros-cons li::before {
+      content: "✔ ";
+      color: #3a8ef6;
+    }
+    .cons li::before {
+      content: "✖ ";
+      color: #ff4c4c;
+    }
+    .screenshots {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .screenshots img {
+      width: 240px;
+      border-radius: 10px;
+      border: 1px solid #3a3a3a;
+    }
+    footer {
       text-align: center;
+      padding: 15px;
+      margin-top: 40px;
       background-color: #0e1533;
       font-size: 12px;
       color: #ccc;
     }
-
-    .screenshots img {
-      width: 45%;
-      border-radius: 8px;
-      margin: 10px;
-      border: 1px solid #1e2a50;
-    }
-
-    .section-description {
-      line-height: 1.6;
-      margin-top: 10px;
-    }
-
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Demon VPN</h1>
-  </header>
+<header>
+  <img src="logo.png" alt="243 TUN Logo">
+  <h1>243 TUN - Easy Android VPN</h1>
+</header>
 
-  <div class="container">
-    <!-- Header with Icon and Title -->
-    <div class="app-header">
-      <img src="https://via.placeholder.com/70" alt="Demon VPN Logo">
-      <div class="app-title">
-        <h2>Demon VPN – Secure Android VPN</h2>
-        <a href="#" class="download-btn">⬇️ Free Download</a>
-      </div>
-    </div>
+<div class="container">
 
-    <!-- Information Table -->
-    <div class="info-table">
-      <p><strong>Rating:</strong> ★★★★☆ (78 votes)</p>
-      <p><strong>License:</strong> Free</p>
-      <p><strong>Version:</strong> 4.2.1</p>
-      <p><strong>Developer:</strong> DemonVPN Team</p>
-      <p><strong>Works on:</strong> Android</p>
-      <p><strong>Also Known As:</strong> Demon VPN – Android Protection</p>
-    </div>
+  <a href="https://www.mediafire.com/file/your_apk_link_here/243TUN.apk/file" class="download-btn">⬇️ Free Download</a>
 
-    <!-- Pros Section -->
-    <h3>Pros</h3>
-    <div class="pros">
-      <ul>
-        <li>✔️ Bypass Firewalls & Access Geo-Restricted Content</li>
-        <li>✔️ Secure & Encrypted VPN Connections</li>
-        <li>✔️ Browse the Web 100% Anonymously</li>
-        <li>✔️ Fast Connections with Unlimited Servers</li>
-      </ul>
-    </div>
-
-    <!-- Cons Section -->
-    <h3>Cons</h3>
-    <div class="cons">
-      <ul>
-        <li>⚠️ Free version may show limited servers</li>
-        <li>⚠️ High-speed servers require premium version</li>
-      </ul>
-    </div>
-
-    <!-- Description -->
-    <h3>About Demon VPN</h3>
-    <p class="section-description">
-      Demon VPN is a powerful Android VPN application that allows you to browse safely, 
-      securely, and anonymously. Whether you want to bypass internet restrictions, access blocked websites, 
-      or protect your privacy, Demon VPN ensures a stable and encrypted connection from your Android device.
-    </p>
-    <p class="section-description">
-      With Demon VPN, you can hide your identity, protect your data, and experience secure browsing 
-      at high speed. It supports multiple VPN protocols, including SSH, SSL, WebSocket, SlowDNS, and more.
-    </p>
-
-    <!-- Screenshots -->
-    <h3>Screenshots</h3>
-    <div class="screenshots">
-      <img src="https://via.placeholder.com/400x800" alt="Screenshot 1">
-      <img src="https://via.placeholder.com/400x800" alt="Screenshot 2">
-    </div>
-
+  <div class="app-info">
+    <p><span class="label">Vote:</span> ★★★☆☆ (19 votes)</p>
+    <p><span class="label">Program license:</span> Free</p>
+    <p><span class="label">Developer:</span> 243TUN</p>
+    <p><span class="label">Version:</span> 3.0.5.3</p>
+    <p><span class="label">Works under:</span> Android</p>
+    <p><span class="label">Also known as:</span> 243 TUN – Android VPN</p>
   </div>
 
-  <footer>
-    © 2025 Demon VPN. All rights reserved.
-  </footer>
+  <h2>Pros</h2>
+  <div class="pros-cons">
+    <ul>
+      <li>Bypass Firewalls & Access Restricted Content</li>
+      <li>Browse the Web 100% Anonymously</li>
+      <li>Secure ICMP tunneling even if TCP is disabled</li>
+      <li>Fast, lightweight, and easy to use</li>
+    </ul>
+  </div>
+
+  <h2>Cons</h2>
+  <div class="pros-cons cons">
+    <ul>
+      <li>Free Accounts are Limited to 100MB per day</li>
+      <li>Limited high-speed servers for free users</li>
+    </ul>
+  </div>
+
+  <h2>About 243 TUN VPN</h2>
+  <p>
+    243 TUN Android VPN is a free VPN client for Android devices that allows you to browse the web anonymously.
+    With 243 TUN, you can bypass restrictive networks and access the internet safely with encrypted connection
+    protection against ads, trackers, and blocked content. This VPN works even when traditional TCP is disabled,
+    using ICMP tunneling to keep you connected.
+  </p>
+
+  <p>
+    Free accounts are limited to 100MB daily usage. After that, users must wait for the next day to resume service.
+    It is best for lightweight secure browsing and accessing restricted sites.
+  </p>
+
+  <h2>Screenshots</h2>
+  <div class="screenshots">
+    <img src="SShoots1.png" alt="Screenshot 1">
+    <img src="SShoots2.png" alt="Screenshot 2">
+    <img src="SShoots3.png" alt="Screenshot 3">
+  </div>
+
+</div>
+
+<footer>
+  © 2025 243 TUN VPN. All rights reserved.
+</footer>
 
 </body>
 </html>
