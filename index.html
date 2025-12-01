@@ -84,18 +84,22 @@
       content: "✖ ";
       color: #ff4c4c;
     }
+
+    /* Horizontal Screenshots */
     .screenshots {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
       gap: 15px;
-      margin-top: 20px;
+      overflow-x: auto;
+      padding-bottom: 10px;
     }
     .screenshots img {
       width: 240px;
+      height: auto;
       border-radius: 10px;
       border: 1px solid #3a3a3a;
+      flex-shrink: 0;
     }
+
     footer {
       text-align: center;
       padding: 15px;
@@ -115,7 +119,7 @@
 
 <div class="container">
 
-  <a href="https://www.mediafire.com/file/your_apk_link_here/243TUN.apk/file" class="download-btn">⬇️ Free Download</a>
+  <a href="#" class="download-btn">⬇️ Free Download</a>
 
   <div class="app-info">
     <p><span class="label">Vote:</span> ★★★☆☆ (19 votes)</p>
@@ -148,13 +152,7 @@
   <p>
     243 TUN Android VPN is a free VPN client for Android devices that allows you to browse the web anonymously.
     With 243 TUN, you can bypass restrictive networks and access the internet safely with encrypted connection
-    protection against ads, trackers, and blocked content. This VPN works even when traditional TCP is disabled,
-    using ICMP tunneling to keep you connected.
-  </p>
-
-  <p>
-    Free accounts are limited to 100MB daily usage. After that, users must wait for the next day to resume service.
-    It is best for lightweight secure browsing and accessing restricted sites.
+    protection against ads, trackers, and blocked content.
   </p>
 
   <h2>Screenshots</h2>
